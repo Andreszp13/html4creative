@@ -14,11 +14,31 @@
       font-size: 2rem;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
+    #myCanvas {
+      background-color: rgb(232, 42, 42);
+    }
   </style>
+
 </head>
 <body>
   <div class="hero">
     Bienvenido a mi mundo digital
   </div>
+<canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.moveTo(0, 100); // Comienza en el borde izquierdo, centro vertical
+  ctx.lineTo(200, 100); // Termina en el borde derecho, centro vertical
+  ctx.stroke();
+</script>
+<img src="koenigsegg-agera-rs-refinement-front.jpg" alt="Koenigsegg agera rs" width="300px">
+<audio controls src="https://31421a59-98e5-4c84-b5c6-4123ca32d525.mdnplay.dev/shared-assets/audio/t-rex-roar.mp3"></audio>
+<video controls width="250">
+  <source src= .flower.webmm " type="video/webm" />
+
+  <source src="https://120cb10b-08f9-4c1b-abf4-fa73dcb78147.mdnplay.dev/shared-assets/videos/flower.mp4" type="video/mp4" />
+</video>
 </body>
 </html>
