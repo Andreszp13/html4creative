@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const div = document.createElement('div');
         div.className = 'imagen';
         const img = document.createElement('img');
-        img.src = 'docs/img/' + nombre;
+        img.src = 'img/' + nombre;
         img.alt = nombre;
         img.style.border = '2px solid red'; // Borde rojo para depuración
         div.appendChild(img);
